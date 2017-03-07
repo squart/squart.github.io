@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>الفن يجمعنا</title>
+    <meta content="IE=edge" http-equiv="x-ua-compatible">
+    <meta content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" name="viewport">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <!-- Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+    <!-- Icons -->
+    <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" media="all" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/earlyaccess/droidarabickufi.css" rel="stylesheet" type="text/css">
+    <!-- Styles -->
+    <link href="css/keyframes.css" rel="stylesheet" type="text/css">
+    <link href="css/materialize.min.css" rel="stylesheet" type="text/css">
+    <link href="css/swiper.css" rel="stylesheet" type="text/css">
+    <link href="css/swipebox.min.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/audio.css">
+  </head>
+
+  <body>
+    <div class="m-scene" id="main"> <!-- Main Container -->
+
+      <!-- Page Content -->
+      <div id="content">
+
+        <!-- Toolbar -->
+        <div id="toolbar" class="halo-nav box-shad-none">
+<!--           <div class="open-left" id="open-left" data-activates="slide-out-left">
+            <i class="ion-android-menu"></i>
+          </div> -->
+          <span class="title">الفن يجمعنا</span>
+            <div class="buttn" id="volumeBtn"></div>
+        </div>
+        
+        <!-- Main Content -->
+        <div class="animated fadeinup fullscreen">
+          
+          <!-- Slider -->         
+          <div class="swiper-container slider slider-fullscreen">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide bg-v-2">
+                <div class="opacity-overlay-black"></div>
+                <h1 style="margin-top: 160px;color:#fff;">إذاعة صدى الجامعة</h1>
+                    <!-- Progress -->
+                    <div class="slider-category" id="waveform" style="margin-top: 0px;"></div>
+                    <div id="bar"></div>
+                    <div id="progress"></div>
+                <div class="bottom-abs">
+                
+
+                    <!-- Top Info -->
+                    <div id="title">
+                      <span id="track"></span>
+                      <div id="timer">0:00</div>
+                      <div id="duration">0:00</div>
+                    </div>
+
+                    <!-- Controls -->
+                    <div class="controlsOuter">
+                      <div class="controlsInner">
+                        <div id="loading"></div>
+
+                        <span id="playBtn" class="buttn btn-floating resize btn-large waves-effect waves-light accent-color btn z-depth-1"><i class="ion-play"></i></span>
+
+                        <span id="pauseBtn" class="buttn btn-floating resize btn-large waves-effect waves-light accent-color btn z-depth-1"><i class="ion-ios-pause"></i></span>
+
+                        <span id="prevBtn" class="buttn btn-floating resize btn-large waves-effect waves-light accent-color btn z-depth-1"><i class="ion-ios-skipbackward"></i></span>
+
+                        <span id="nextBtn" class="buttn btn-floating resize btn-large waves-effect waves-light accent-color btn z-depth-1"><i class="ion-ios-skipforward"></i></span>
+
+                      </div>
+                      <div class="buttn" id="playlistBtn"></div>
+                      
+                    </div>
+
+                    <!-- Playlist -->
+                    <div id="playlist">
+                      <div id="list"></div>
+                    </div>
+                    <!-- Volume -->
+                    <div id="volume" class="fadeout">
+                      <div id="barFull" class="bar"></div>
+                      <div id="barEmpty" class="bar"></div>
+                      <div id="sliderBtn"></div>
+                    </div>
+
+                </div>
+              </div>
+            </div>
+            <!-- Add Pagination -->
+          <!-- End of Slider -->
+          </div>
+        </div> <!-- End of Main Contents -->
+      
+       
+      </div> <!-- End of Page Content -->
+
+    </div> <!-- End of Page Container -->
+    
+    <!-- Scripts -->
+    <script src="js/howler.core.js"></script>
+    <script src="js/siriwave.js"></script>
+    <script src="js/player.js"></script>
+    <script src="js/jquery-2.1.0.min.js"></script>
+    <script src="js/jquery.swipebox.min.js"></script>   
+    <script src="js/jquery.smoothState.min.js"></script> 
+    <script src="js/materialize.min.js"></script> 
+    <script src="js/swiper.min.js"></script>  
+    <script src="js/jquery.mixitup.min.js"></script>
+    <script src="js/masonry.min.js"></script>
+    <script src="js/chart.min.js"></script>
+    <script src="js/functions.js"></script>
+    <script>
+  $(document).ready(function () {
+    //initialize swiper when document ready  
+    var mySwiper = new Swiper ('.swiper-container', {
+      loop: false
+    })        
+  });
+    </script>
+  </body>
+</html>
